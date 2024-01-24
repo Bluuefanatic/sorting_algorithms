@@ -17,6 +17,20 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/**
+ * struct deck_node_s - Doubly linked list node for a deck of cards
+ *
+ * @n: Integer stored in the node (representing a card)
+ * @prev: Pointer to the previous card in the deck
+ * @next: Pointer to the next card in the deck
+ */
+typedef struct deck_node_s
+{
+	const int n;
+	struct deck_node_s *prev;
+	struct deck_node_s *next;
+} deck_node_t;
+
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
